@@ -1,5 +1,5 @@
 'use client';
-import {Row, Col, Space, Typography, Button, Card, Tag, Table} from 'antd';
+import { Row, Col, Space, Typography, Button, Card, Tag, Table, message } from 'antd';
 import {
   DownloadOutlined,
   LinkedinOutlined,
@@ -12,11 +12,20 @@ const LINKS = {
   resume: '/Daisy-Pei-Resume.pdf',
   linkedin: 'https://www.linkedin.com/in/daisy-p-b67763211/',
   github: 'https://github.com/1tongp',
-  email: 'mailto:yitongp22@gmail.com',
+  email: 'yitongp22@gmail.com',
   vcf: '/yitong.vcf' 
 };
 
 export default function Page() {
+  const handleEmailClick = async () => {
+    try {
+      await navigator.clipboard.writeText(LINKS.email);
+      message.success('Email copied to clipboard!');
+    } catch (err) {
+      message.error('Failed to copy email');
+    }
+    window.location.href = `mailto:${LINKS.email}`;
+  };
   // calcuate total projects and AI projects
   const totalProjects = projects.length;
   const aiProjects = projects.filter(p => p.role === 'AI' || p.role === 'Both').length;
@@ -37,15 +46,15 @@ export default function Page() {
               Hi, I’m Daisy (Yitong) Pei 👋
             </Typography.Title>
             <Typography.Paragraph style={{fontSize: 18, marginBottom: 8}}>
-              Automation Test Anyalst | Software Engineer | AI Enthusiast in Melbourne. I build data-aware apps,
-              automation, and GenAI features that ship.
+              AI Engineer | Software Engineer | Automation Test Analyst
+              I build AI-powered applications and GenAI features, integrating automation testing to deliver reliable, production-ready solutions.
             </Typography.Paragraph>
 
             {/* CTA */}
             <Space wrap size="middle">
               <a href={LINKS.resume} download>
                 <Button type="primary" danger size="large" icon={<DownloadOutlined />}>
-                  Download Résumé
+                  Download Resume
                 </Button>
               </a>
               <a href={LINKS.linkedin} target="_blank" rel="noreferrer">
@@ -54,10 +63,9 @@ export default function Page() {
               <a href={LINKS.github} target="_blank" rel="noreferrer">
                 <Button size="large" icon={<GithubOutlined />}>GitHub</Button>
               </a>
-              <a href={LINKS.email}>
-                <Button size="large" icon={<MailOutlined />}>Email</Button>
-              </a>
-              {/* ✅ 新增：下载 vCard */}
+              <Button size="large" icon={<MailOutlined />} onClick={handleEmailClick}>
+                Email
+              </Button>
               <a href={LINKS.vcf} download>
                 <Button size="large">Download vCard (.vcf)</Button>
               </a>
