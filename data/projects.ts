@@ -67,7 +67,7 @@ export const projects = [
     role: 'SWE',
     tags: ['MERN', 'MongoDB', 'Express', 'React', 'Node.js'],
     summary: 'My personal portfolio website showcasing my projects and skills, built with MERN stack.',
-    github: ''
+    github: 'https://github.com/1tongp/Personal-Website#'
   },
   {
     id: 'hsbc-crm',
