@@ -91,7 +91,7 @@ export default function HeaderBar({ isDark, onToggleTheme, onOpenSearch }: Props
           <Tooltip title="Search">
             <Button aria-label="Search" icon={<SearchOutlined />} onClick={onOpenSearch} />
           </Tooltip>
-          <a href="/resume.pdf" download>
+          <a href="/Daisy-Pei-Resume.pdf" download>
             <Button icon={<FilePdfOutlined />}>Resume</Button>
           </a>
           <a href="/yitong.vcf" download>
@@ -143,7 +143,7 @@ export default function HeaderBar({ isDark, onToggleTheme, onOpenSearch }: Props
             {
               key: 'resume',
               label: (
-                <a href="/resume.pdf" download>
+                <a href="/Daisy-Pei-Resume.pdf" download>
                   <FilePdfOutlined /> Resume
                 </a>
               ),

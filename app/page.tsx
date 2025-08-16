@@ -9,7 +9,7 @@ import {
 import {projects} from '@/data/projects'; // ✅ 用于统计项目数量
 
 const LINKS = {
-  resume: '/resume.pdf',
+  resume: '/Daisy-Pei-Resume.pdf',
   linkedin: 'https://www.linkedin.com/in/daisy-p-b67763211/',
   github: 'https://github.com/1tongp',
   email: 'mailto:yitongp22@gmail.com',
