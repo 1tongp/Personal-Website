@@ -15,7 +15,8 @@ export default function SearchDrawer({open, onClose}:{open:boolean; onClose:()=>
       <List
         dataSource={results}
         renderItem={(p)=> (
-          <List.Item actions={[<Link key="v" href={`/projects#${p.id}`}>View</Link>] }>
+          // <List.Item actions={[<Link key="v" href={`/projects#${p.id}`}>View</Link>] }>
+          <List.Item>
             <List.Item.Meta title={p.title} description={p.summary} />
             <div>{p.tags.map(t=> <Tag key={t}>{t}</Tag>)}</div>
           </List.Item>

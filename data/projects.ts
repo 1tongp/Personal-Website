@@ -56,8 +56,8 @@ export const projects = [
     title: 'Metaverse for Virtual Education',
     year: 2024,
     role: 'AI',
-    tags: ['Metaverse', 'Unity', 'C#', 'PHP', 'Recommendation System'],
-    summary: 'University project: immersive metaverse platform for virtual education, with recommendation system for personalized learning.',
+    tags: ['Metaverse', 'Unity', 'C#', 'PHP', 'Recommendation System', 'Research'],
+    summary: 'University Research Project: immersive metaverse platform for virtual education, with recommendation system for personalized learning.',
     paper: 'Yitong(Daisy)Pei_Metaverse_for_Virtual_Education.pdf'
   },
   {
@@ -75,7 +75,7 @@ export const projects = [
     year: 2021,
     role: 'SWE',
     tags: ['MERN', 'MongoDB', 'Express', 'React', 'Node.js'],
-    summary: 'University project: customer relationship management system for HSBC, developed with MERN stack.',
+    summary: 'University Project: customer relationship management system for HSBC, developed with MERN stack.',
     github: 'https://github.com/1tongp/CRM-RoomOfRequirements'
   },
   {
@@ -84,7 +84,7 @@ export const projects = [
     year: 2021,
     role: 'SWE',
     tags: ['MERN', 'MongoDB', 'Express', 'React', 'Node.js'],
-    summary: 'University project: full-stack café ordering web application for both user and vendor side for UniMelb campus café.',
+    summary: 'University Project: full-stack café ordering web application for both user and vendor side for UniMelb campus café.',
     github: 'https://github.com/1tongp/SnacksInVan-KeepItSimple'
   },
 ];

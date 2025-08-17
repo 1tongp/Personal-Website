@@ -96,13 +96,13 @@ const EDUCATION: Edu[] = [
   },
   {
     school: 'University of Melbourne',
-    degree: 'BSc in Computing and Software Systems (First Class Honours, WAM 83.6)',
+    degree: 'BSc in Computing and Software Systems',
     start: 'Mar 2020',
     end: 'Jul 2022',
     location: 'Melbourne',
     notes: [
       'Relevant Coursework: Software Engineering, Data Structures and Algorithms, Database Systems, Web Development',
-      'WAM: 83.6/100',
+      'WAM: 83.6/100 (First Class Honours)',
       'Awarded Melbourne International Scholarship for outstanding academic performance and Melbourne Leadership Awards for contribution to the university community.',
       'Transcript: [View here](https://www.myequals.net/sharelink/5d257d95-936b-48c4-bcfd-a76a9d1c7340/36e58e30-8ea9-44b6-9d97-9a2358dab92d)',
     ]

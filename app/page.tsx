@@ -46,7 +46,7 @@ export default function Page() {
               Hi, I’m Daisy (Yitong) Pei 👋
             </Typography.Title>
             <Typography.Paragraph style={{fontSize: 18, marginBottom: 8}}>
-              AI Engineer | Software Engineer | Automation Test Analyst
+              AI Enthusiastic | Software Engineer | Automation Test Analyst <br />
               I build AI-powered applications and GenAI features, integrating automation testing to deliver reliable, production-ready solutions.
             </Typography.Paragraph>
 
