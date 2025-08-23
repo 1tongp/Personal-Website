@@ -81,7 +81,7 @@ export default function Page() {
             </Space>
           </Space>
         </Col>
-        <Col xs={24} lg={8}>
+        {/* <Col xs={24} lg={8}>
           <Card style={{borderRadius: 16}} bodyStyle={{padding: 24}}>
             <Typography.Title level={3} style={{textAlign: 'center', marginTop: 4}}>
               Availability
@@ -90,7 +90,7 @@ export default function Page() {
               Open to AI Engineer roles · Melbourne/Sydney · Hybrid
             </Typography.Paragraph>
           </Card>
-        </Col>
+        </Col> */}
       </Row>
 
       {/* About */}
